@@ -1,87 +1,252 @@
+
 <!DOCTYPE HTML>
 <!--
    Editorial by HTML5 UP
    html5up.net | @ajlkn
    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-   -->
+-->
 <html>
    <head>
-      <title>Electronics Design | Rutuja Patel | Fab Academy 2018</title>
+       <title>Electronics Design | Rutuja Patel | Fab Academy 2018</title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
       <link rel="stylesheet" href="assets/css/main.css" />
-      <!--[if lte IE 9]>
-      <link rel="stylesheet" href="assets/css/ie9.css" />
-      <![endif]-->
-      <!--[if lte IE 8]>
-      <link rel="stylesheet" href="assets/css/ie8.css" />
-      <![endif]-->
+      <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+      <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
    </head>
    <body>
+
       <!-- Wrapper -->
-      <div id="wrapper">
-         <!-- Main -->
-         <div id="main">
-            <div class="inner">
-               <!-- Header -->
-               <header id="header">
-                  <a href="index.html" class="logo"><strong>Rutuja Patel </strong>| Fab Academy 2018</a>
-                  <ul class="icons">
-                     <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                     <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                     <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
-                     <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-                     <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
-                  </ul>
-               </header>
-               <!-- Content -->
-               <section>
+         <div id="wrapper">
+
+            <!-- Main -->
+               <div id="main">
+                  <div class="inner">
+
+                     <!-- Header -->
+                        <header id="header">
+                           <a href="index.html" class="logo"><strong>Rutuja Patel </strong>| Fab Academy 2018</a>
+                           <ul class="icons">
+                              <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                              <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                              <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                              <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                           </ul>
+                        </header>
+
+                     <!-- Fab Week Content  -->
+                        <section>
                   <header class="main">
                      <h1>Week 7 | Electronics Design | Jan 28</h1>
                   </header>
                   <!-- Content -->
                   <h2 id="content"><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html">Fab Academy 2018 | Archive</a></h2>
-                  <p>
-                     <a href=http://ng.cba.mit.edu/show/script/18.01.fab.show.html><b>digital fabrication</b></a> ('h' for help, 'i' for index, videos linked) <br>
-                     <b>schedule</b> <br>
-                     <b><a href=http://fab.cba.mit.edu/about/charter>rights and responsibilities</a></b> <br>
-                     <b>assignment</b>
-                     plan and sketch a potential <a href=https://cse.google.com/cse/publicurl?cx=005180655622273248137:bjgkhj-m09c>final project</a>  <br>
-                  </p>
+                  
                   <hr>
 
                  <br>
-                 <h3>Sketch of Final Project</h3>
-                  		<div class="box">
+                 <h3>Designing ATtiny45</h3>
+                        <div class="box">
 
-                  			<p>
-                  				Flute is musical instrument which work on blow of air with 6 hole to be controlled by finger tips for melodius music.
-                  			</p>
-                  			
-                  		</div>
-            </div>
-         </div>
-         </section>
-      </div>
-      <!-- Sidebar -->
-      <div id="sidebar">
-         <div class="inner">
-         	<center><img src="images/profile.jpg" width="50%" height="50%" alt="">
-         		<br>
-         		Rutuja Patel <br>
-         	EC Engineer</center>
-            <!-- Menu -->
-            <nav id="menu">
-               <header class="major">
-                  <h2>Menu</h2>
-               </header>
-               <ul>
-                  <li><a href="index.html">Homepage</a></li>
-                  <li>
-                     <span class="opener">Assignments</span>
-                     <ul>
-                     <ul>
+                           <p>
+                              This week is of designing your own circuit board. In our lab all the components of ATtinty 45 were available so I decided to redesign the same. I made the design in Autodesk Eagle software. You can download the software from <a href="https://www.autodesk.com/products/eagle/free-download">here</a> 
+                              <br>
+                              First step was  to download <a href="https://github.com/moderndevice/EagleLibraries/blob/master/fab.lbr">fab.lbr</a> and add it to Eagle Library. The process of openoing the library is shown below.
+
+                              <br>
+                              <br>
+                              <div class="w3-content w3-section" >
+                              <img class="mySlides" src="images/week7/includefablbr1.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/includefablbr2.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/includefablbr3.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/ClickFabLibrary.jpg" style="width:100%">
+                              </div>
+                              <script>
+                              var myIndex = 0;
+                              carousel();
+
+                              function carousel() {
+                              var i;
+                              var x = document.getElementsByClassName("mySlides");
+                              for (i = 0; i < x.length; i++) {
+                              x[i].style.display = "none";  
+                              } 
+                              myIndex++;
+                              if (myIndex > x.length) {myIndex = 1}    
+                              x[myIndex-1].style.display = "block";  
+                              setTimeout(carousel, 2000); // Change image every 2 seconds
+                              }
+                              </script>
+                              <br>
+                              <br>
+
+                              Next step is to make a schematic of the board we want to make. I decided to add two led's and one button and program it. I listed all the components that I will use so at the end I doon't get confused. Kishan Chavda who is an intern at our lab helped me to understand the eagle software and making schematic.
+                              <br>
+                              Components used:
+                              <br>
+                              <ol>
+                                 <li>ATtiny45 IC</li>
+                                 <li>AVRISP</li>
+                                 <li>RED LED</li>
+                                 <li>GREEN LED</li>
+                                 <li>BUTTON</li>
+                              </ol>
+                              <br>
+                              <br>
+                              To open the schematic view rom <b>Fille << New << Schematic</b>. Now the schematic view opens and you can start making the schematic.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/File<New<Schematic.jpg" aalt="File<New<Schematic"></span>
+                              <br>
+                              <br>
+                              To add the components click the <b>add</b> icon in the schematic view and start adding the cmponents.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/HowToAddComponent.jpg" aalt="HowToAddComponent"></span>
+                              <br>
+                              <br>
+                              I took all the components from the fab library. It has almost all the components available.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/AddingButton.jpg" aalt="AddingButton"></span>
+                              <br>
+                              <br>
+                              I found all the components and added it to the schematic.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/AllComponents.jpg" aalt="AllComponents"></span>
+                              <br>
+                              <br>
+                              Now for connecting the components together we use "Net" icon from the control pannel. This command gives individual connections for each components. 
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/UsingNet.jpg" aalt="UsingNet"></span>
+                              <br>
+                              <br>
+                              Use "Name" icon for naming the component. By naming the components, it becomes easy to differentiate the components and also easy to recognize the component easily.
+                              <br>
+                              <br> 
+                              <span class="image main"><img src="images/week7/ComponentName1.jpg" aalt="ComponentName1"></span>
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/ComponentName2.jpg" aalt="ComponentName2"></span>
+                              <br>
+                              <br>
+                              Giving value of the component. By giving the value, it is easy to diffierentiat the comonent and it becomes easy to recognise where the component is to be placed.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/ChangeValue.jpg" aalt="ChangeValue"></span>
+                              <br>
+                              <br>
+                              "Name" and "Value" of the component can also be changed by Right clicking on the component and changing the properties.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/PropertyOfComponent.jpg" aalt="PropertyOfComponent"></span>
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/PropertyOfComponent1.jpg" aalt="PropertyOfComponent1"></span>
+                              <br>
+                              <br>
+                              The "ERC" command shows the error in the Schematic. I got one 0 error nad 1 warning for not giving the value of switch. After correction there were no errors and no warning
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/SwitchError.jpg" aalt="SwitchError"></span>
+                              <br>
+                              <br>
+                              FINAL SCHEMATIC
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/FinalSchematic.jpg" aalt="FinalSchematic"></span>
+                              <br>
+                              <br>
+                              After completing the schematic next step is to switch on the board view. From board view we can make export the image of the board we want to make and load it to the fabmodules.
+                              <br>
+                              You can switch to board using the <b>Switch to Board</b> icon in the above pannel. In the board view you will have components unarranged and a big box becide it.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/SwitchToBoard.jpg" aalt="SwitchToBoard"></span>
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/BoardView.jpg" aalt="BoardView"></span>
+                              <br>
+                              <br>
+                              Drag all the components into the box and arrange them in a best possible way.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/ComponentInBox.jpg" aalt="ComponentInBox"></span>
+                              For achieving the shortest connection path, there is a command <b>Ratsnest</b> in the left pannel. It makes all the airwire to connect to the shortest path.
+                              <br>
+                              <br> 
+                              <span class="image main"><img src="images/week7/Ratsnet.jpg" aalt="Ratsnet"></span>
+                              <br>
+                              <br>
+                              I came to know about <b>fab.dru</b> from <a href="http://archive.fabacademy.org/archives/2017/fablabcept/students/177/">Arpi Maheshwari's</a> website who was the last year fab graduate. The fab.dru has all the modella settings and rules. So I loaded it from <b>DRC</b> icon in the left pannel and loaded it.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/LoadFabDru.jpg" aalt="LoadFabDru"></span>
+                              <br>
+                              <br>
+                              I used <b>Autorout</b> command to make connection routs.
+                              <br>
+                              <br>
+                              <div class="w3-content w3-section" >
+                              <img class="mySlides" src="images/week7/Autorout.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/Autorout2.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/Autorout3.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/Autorout4.jpg" style="width:100%">
+                              <img class="mySlides" src="images/week7/Autorout5.jpg" style="width:100%">
+                              </div>
+                              <br>
+                              <br>
+                              I choosed the design and modified it a bit because the traces were near to each other. When the traces are near to each other the either they will merge or there is a possibility that there is a chort circuit. My Final Board Design.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/FinalBoard.jpg" aalt="FinalBoard"></span>
+                              <br>
+                              <br>
+                              I milled the board in the new fab modules which got milled properly.
+                              <br>
+                              <br>
+                              <span class="image main"><img src="images/week7/SolderedPCB.jpg" aalt="SolderedPCB"></span>
+
+
+
+ 
+                              
+
+                           </p>
+                           
+                        </div>
+                        </section>
+            <!-- Fab Week Content  -->
+
+
+                  </div>
+               </div>
+
+            <!-- Sidebar -->
+               <div id="sidebar">
+                  <div class="inner">
+
+                     <!-- Search -->
+                  <center><img src="images/profile.jpg" width="50%" height="50%" alt="">
+               <br>
+               Rutuja Patel <br>
+            EC Engineer</center>
+
+                     <!-- Menu -->
+                        <nav id="menu">
+                           <header class="major">
+                              <h2>Menu</h2>
+                           </header>
+                           <ul>
+                              <li><a href="index.html">Homepage</a></li>
+                              <li>
+                                 <span class="opener">Submenu</span>
+                                 <ul>
+                                      <ul>
                         <li><a href="1-principles-practices.html">Principles Practices</a></li>
                      </ul>
                      <ul>
@@ -109,65 +274,54 @@
                         <li><a href="9-embedded-programming.html">Embedded Programming</a></li>
                      </ul>
                      <ul>
-                        <li><a href="10-mechanical-design.html">Mechanical Design</a></li>
+                        <li><a href="10-molding-casting.html">Molding and Casting</a></li>
                      </ul>
                      <ul>
-                        <li><a href="11-machine-design.html">Machine Design</a></li>
+                        <li><a href="11-input-devices.html">Input Devices</a></li>
                      </ul>
                      <ul>
                         <li><a href="12-output-devices.html">Output Devices</a></li>
                      </ul>
                      <ul>
-                        <li><a href="13-molding-casting.html">Molding and Casting</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="14-input-devices.html">Input Devices</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="15-wildcard.html">Wildcard Week</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="16-networking-communications.html">Networking and Communication</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="17-interface-application-programming.html">Interface and Application Programming</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="18-applications-implications.html">Applications and Implications</a></li>
-                     </ul>
-                     <ul>
-                        <li><a href="19-invention-IP-business.html">Invention, Intellectual Property, and Income</a></li>
-                     </ul>
-                 </ul>
-                  </li>
-                  <li><a href="final-project.html">Final Project</a></li>
+                        <li><a href="13-interface-and-application-programming.html">Interface and Application Programming</a></li>
+                                 </ul>
+                              </li>
+                              
+                           </ul>
+                           <li><a href="Final-Project.html">Final Project</a></li>
+                        </nav>
 
-               </ul>
-            </nav>
-            <section>
-               <header class="major">
-                  <h2>Get in touch</h2>
-               </header>
-               <p>I am EC engineer doing my BE at state university at Gujarat, India.</p>
-               <ul class="contact">
-                  <li class="fa-envelope-o"><a href="#">rutujapatel1201@gmail.com</a></li>
-                  <li class="fa-phone">Sen me a Mail</li>
-                  <li class="fa-home">Iscon, Ahmedabad,<br />
-                     Gujarat, IN 380015
-                  </li>
-               </ul>
-            </section>
-            <!-- Footer -->
-            <footer id="footer">
-               <p class="copyright">&copy; Rutuja Patel. All rights reserved. <br>Design: Editorial Theme by <a href="https://html5up.net">HTML5 UP</a>.</p>
-            </footer>
+
+                         <section>
+                                 <header class="major">
+                                    <h2>Get in touch</h2>
+                                 </header>
+                                 <p>I am EC engineer doing my BE at state university at Gujarat, India.</p>
+                                 <ul class="contact">
+                                    <li class="fa-envelope-o"><a href="#">rutujapatel1201@gmail.com</a></li>
+                                    <li class="fa-phone">Sen me a Mail</li>
+                                    <li class="fa-home">Iscon, Ahmedabad,<br />
+                                       Gujarat, IN 380015
+                                    </li>
+                                 </ul>
+                           </section>
+
+                     <!-- Footer -->
+                           <footer id="footer">
+                                  <p class="copyright">&copy; Rutuja Patel. All rights reserved. <br>Design: Editorial Theme by <a href="https://html5up.net">HTML5 UP</a>.</p>
+                              </footer>
+
+                  </div>
+               </div>
+
          </div>
-      </div>
+
       <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/skel.min.js"></script>
+         <script src="assets/js/util.js"></script>
+         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+         <script src="assets/js/main.js"></script>
+
    </body>
 </html>
