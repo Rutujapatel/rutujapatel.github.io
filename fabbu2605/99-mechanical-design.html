@@ -1,0 +1,270 @@
+
+<!DOCTYPE HTML>
+<!--
+   Editorial by HTML5 UP
+   html5up.net | @ajlkn
+   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+   <head>
+       <title> Mechanical Design | Rutuja Patel | Fab Academy 2018</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+      <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+   </head>
+   <body>
+
+      <!-- Wrapper -->
+         <div id="wrapper">
+
+            <!-- Main -->
+               <div id="main">
+                  <div class="inner">
+
+                     <!-- Header -->
+                        <header id="header">
+                           <a href="index.html" class="logo"><strong>Rutuja Patel </strong>| Fab Academy 2018</a>
+                           <ul class="icons">
+                              <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                              <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                              <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                              <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                           </ul>
+                        </header>
+
+                     <!-- Fab Week Content  -->
+                        <section>
+                  <header class="main">
+                     <h1>Week 15 | Mechanical Design | May 2</h1>
+                  </header>
+                  <!-- Content -->
+                  <h2 id="content"><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html">Fab Academy 2018 | Archive</a></h2>
+                  
+
+                  <hr>
+                  <p>
+                  <!-- week Content  -->
+                  This week we had to work on mechanical design and machine design in a group. We had to make a machine, this was the first time I was going to learn making a machine. As we had to work in group, we altogether discussed and finalize the machine we were going to make. 
+                  <br>
+                  After the discussion, we decided to make a plotter with simple design and less use of materials. We refered the <b><a href="https://www.thingiverse.com/thing:2349232">plotter design</a></b> which was available on thingivers. We worked individually on the part we were comfortable, so I choosed to work in electronics as I am more good at it.
+                  <br>
+                  I refered the <b><a href="https://docs.google.com/presentation/d/1GihJuR7yHVtUPYCp9GVDHLsJUhT2RwPrkIopzYrXYhw/edit#slide=id.g2af9f01a3f_0_0">tutorial</a></b> and understood the mechanism and working of the machine. Here we are using <b>Arduino Uno, CNC Shield, two bipolar stepper and Servo motor.</b>
+                  <br>
+                  <br>
+                  <h3>Upload grbl to Arduino</h3>
+                  First step is to upload the grbl to arduino. Steps I followed:
+                  <br>
+                  <br>
+                  <div class="w3-content w3-section" >
+                  <img class="mySlides" src="images/week15-16/DownmoadZip.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/IncludeZip.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/Uploadgrbl.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/Uploadgrbl2.jpg" style="width:100%">
+                  </div>
+                  <script>
+                  var myIndex = 0;
+                  carousel();
+
+                  function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                  } 
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2000); // Change image every 2 seconds
+                  }
+                  </script>
+                  <br>
+                  <br>
+                  <ol>
+                    <li>Download the <a href="https://github.com/robottini/grbl-servo">grbl servo zip</a></li>
+                    <li>Open the latest <a href="https://www.arduino.cc/en/Main/Software">Arduino</a> software in your computer.</li>
+                    <li>Open <b>Sketch << Include Library << Add .Zip Library</b> add the downloaded zip file. After doing this, you will be able to see a library called "grbl-servo-master"</li>
+                    <li>Go to <b>File << Examples << grbl-servo-master << grbl Upload </b>, this will open a new code window. Upload the code to your Arduino.</li>
+                  </ol>
+                  <br>
+                  <br>
+                  <br>
+                  <hr>
+
+
+                  <b>What is a gcode?</b>
+                  G-code is a widely used programmng language for controlling machines like 3D printer, CNC Mchine, Milling machine, 3D printer and many industrial machines. As we do Python coding similarly we can make a gcode.
+                  <br>
+                  <br>
+                  It was very challenging for me to unerstand the gcode, I refered some links to understand the gcode and could understand a bit of it, Gaurav helped me to understand the gcode after whic I was more clear with it. The best tutorial I found is from <a href="https://makezine.com/2016/10/24/get-to-know-your-cnc-how-to-read-g-code/">https://makezine.com/2016/10/24/get-to-know-your-cnc-how-to-read-g-code/</a>. Everything is explained nicely in this tutorial.
+                  <hr>
+                  
+
+
+                  <h3>Generating a gcode in Inkscape</h3>
+                  <br>
+                  I used this software to generate a gcode, you can download it from <a href="https://inkscape.org/en/"></a>. 
+                  The steps I followed:
+                  <br>
+                  <ol>
+                    <li>First step is to download any <b>vector or png</b> image and open it in the inkspace</li>
+                    <li>Reduce the image size.</li>
+                    <li>Now for tracing a bitmap<b>Left click on image << Right click on image << Trace bitmap</b>.</li>
+                    <li></li>
+                  <br><br>
+                  <div class="w3-content w3-section" >
+                  <img class="mySlides" src="images/week15-16/OpenImgInk.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/ResizeTheImgInk.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/TraceBitmap.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/TraceBitmap2.jpg" style="width:100%">
+                  </div>
+                  <br>
+                  <br>
+                  <li>Now add a layer from the layre pannel <b>Add Layer</b></li>
+                  <li>Now right click on the image and choose <b></b></li>
+                  <div class="w3-content w3-section" >
+                  <img class="mySlides" src="images/week15-16/AddLayer.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/MoveToLayer.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/MoveToLayer2.jpg" style="width:100%">
+                  </div>
+                  <br>
+                  <br>
+                  <li>Go to <b>Extensions << Gcodetools << Tools Library</b>. A window will open, click Apply and close the window.</li>
+                  <div class="w3-content w3-section" >
+                  <img class="mySlides" src="images/week15-16/ExtToolsLib.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/ApplyToolsLib.jpg" style="width:100%">
+                  </div>
+                  <br>
+                  <br>
+                  Change the followig values for the machine. Use <b>Text tool</b> for changing the values.
+                  <br>
+                  <br>
+                  <span class="image main"><img src="images/week15-16/ValuesToolLib.jpg" aalt="ValuesToolLib"></span>
+                  <br>
+                  <br>
+                  <li>Again go to <b>Extensions << Gcodetools << Oriantation points</b>, click apply and close the window. This will generate two points in whcih we can adjust the picture according to our machine size</li>
+                  <li>Select the text tools and change the points according to your machine.</li>
+                  <br>
+                  <br>
+                  <div class="w3-content w3-section" >
+                  <img class="mySlides" src="images/week15-16/OriantPoints.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/OrientPoints2.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/ChangePoints.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/PtoGPref.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/PtoG1.jpg" style="width:100%">
+                  <img class="mySlides" src="images/week15-16/PtoG2.jpg" style="width:100%">
+                  </div>
+                  <br>
+                  <br>
+
+
+
+                  <h3>Download UGS(Universal Gcode Sender)</h3>
+                  <br>
+                  Universal gcode sender is used to send gcode to CNC machine. This software is used at industrial level and. It has three layers: <b>GUI, Controller and Communicator</b>. GUI is a visual representation of the CNC machine and contains a controller object which it uses to control the machine. The controller object contains a communicator object which it uses for sending data to the CNC firmware. The controller is also responsible for encapsulating commands for the communication layer and interpreting responses, then re-encapsulating results for return to the GUI. Finally the communication layer is responsible for maintaining a connection with the CNC machine and transmitting/retrieving data. For more information see <a href="https://github.com/winder/Universal-G-Code-Sender/wiki/Code-Overview">UGC Wiki</a>
+                  <br>
+                  You can download UGS form <a href="https://github.com/winder/Universal-G-Code-Sender">here</a>. As it is a java based software, we need to download jdk kit. JDK is Java Development Kit by which is used for opening java based software. You can download it from <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">here</a> 
+                  <br>
+                  <br>
+                  <span class="image main"><img src="images/week15-16/UGCOpen.jpg" aalt="UGCOpen"></span>
+                  <br>
+                  <br>
+                  <b>Make sure that the baud rate is 115200</b> It is because the cnc bord is capable to transfer 115200 bits per second and machine has to work at high speed. Select the port which you are using and then click on open.
+                  <br>
+                  <br>
+
+
+
+
+
+
+                  </ol>
+
+
+
+
+
+
+
+                   <!-- week Content  -->
+                  </p>
+                  <hr>
+
+                
+                            </section>
+            <!-- Fab Week Content  -->
+
+
+                  </div>
+               </div>
+
+            <!-- Sidebar -->
+               <div id="sidebar">
+                  <div class="inner">
+
+                     <!-- Search -->
+                  <center><img src="images/profile.jpg" width="50%" height="50%" alt="">
+               <br>
+               Rutuja Patel <br>
+            EC Engineer</center>
+
+                     <!-- Menu -->
+                        <nav id="menu">
+                           <header class="major">
+                              <h2>Menu</h2>
+                           </header>
+                           <ul>
+                              <li><a href="index.html">Homepage</a></li>
+                              <li>
+                                 <span class="opener">Submenu</span>
+                                 <ul>
+                                     <li><a href="1-principles-practices.html">Principles Practices</a></li>
+                                           <li><a href="2-project-management.html">Project Management</a></li>
+                                           <li><a href="3-computer-design.html">Computer-Aided Design</a></li>
+                                           <li><a href="4-computer-cutting">Computer Cutting</a></li>
+                                           <li><a href="5-electronics-production">Electronics Production</a></li>
+                                           <li><a href="6-scanning-printing.html">3D Scanning and Printing</a></li>
+                                 </ul>
+                              </li>
+                             
+                           </ul>
+                           <li><a href="Final-Project.html">Final Project</a></li>
+                        </nav>
+
+
+                         <section>
+                                 <header class="major">
+                                    <h2>Get in touch</h2>
+                                 </header>
+                                 <p>I am EC engineer doing my BE at state university at Gujarat, India.</p>
+                                 <ul class="contact">
+                                    <li class="fa-envelope-o"><a href="#">rutujapatel1201@gmail.com</a></li>
+                                    <li class="fa-phone">Sen me a Mail</li>
+                                    <li class="fa-home">Iscon, Ahmedabad,<br />
+                                       Gujarat, IN 380015
+                                    </li>
+                                 </ul>
+                           </section>
+
+                     <!-- Footer -->
+                           <footer id="footer">
+                                  <p class="copyright">&copy; Rutuja Patel. All rights reserved. <br>Design: Editorial Theme by <a href="https://html5up.net">HTML5 UP</a>.</p>
+                              </footer>
+
+                  </div>
+               </div>
+
+         </div>
+
+      <!-- Scripts -->
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/skel.min.js"></script>
+         <script src="assets/js/util.js"></script>
+         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+         <script src="assets/js/main.js"></script>
+
+   </body>
+</html>

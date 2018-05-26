@@ -1,0 +1,208 @@
+
+<!DOCTYPE HTML>
+<!--
+   Editorial by HTML5 UP
+   html5up.net | @ajlkn
+   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+   <head>
+       <title>Output Devices | Rutuja Patel | Fab Academy 2018</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+      <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+   </head>
+   <body>
+
+      <!-- Wrapper -->
+         <div id="wrapper">
+
+            <!-- Main -->
+               <div id="main">
+                  <div class="inner">
+
+                     <!-- Header -->
+                        <header id="header">
+                           <a href="index.html" class="logo"><strong>Rutuja Patel </strong>| Fab Academy 2018</a>
+                           <ul class="icons">
+                              <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                              <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                              <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                              <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                              <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+                           </ul>
+                        </header>
+
+                     <!-- Fab Week Content  -->
+                        <section>
+                  <header class="main">
+                     <h1>Week 12 | Output Devices | Apr 11</h1>
+                  </header>
+                  <!-- Content -->
+                  <h2 id="content"><a href="http://academy.cba.mit.edu/classes/principles_practices/index.html">Fab Academy 2018 | Archive</a></h2>
+                  
+
+                  <hr>
+                  <!-- week Content  -->
+                  <p>
+                     The task for this week was of making an output device which I would be using in my Final project. I decided to use ATtiny 44 for controlling a servo. Neil already designed one board for servo as a output device, so I refered the same board and redesign it.
+                     <br><br>
+                     I used Eagle for making the design.
+                     <br><br>
+                     <img src="images/week12/EagleSchematic.jpg" alt="EagleSchematic" width="700" height="420" /> 
+                     <br><br>
+                     Board of the circuit. I used Autorout for designing the traces and kept it 14 mill. This time I made the boudary a bit bigger so while milling the machine do not cut the traces. 
+                     <br><br>
+                     <img src="images/week12/FailBoard.jpg" alt="FailBoard" width="700" height="420" />
+                     <br><br>
+                     Next step was to open the image in fabmodules to check if any traces are merging or not. I found traces meetong at two places so I had to go back to the Eagle Board and make some schanges. As I had made the traces width as 6 so there is not much merging of the traces.
+                     <br><br>
+                     <img src="images/week12/faberror.jpg" alt="faberror" width="700" height="420" />
+                     <br><br>
+                     I manually changed the traces and also and then again checked in fabmodules which was showing correct and the traces were also not merging. 
+                     <br><br>
+                     <img src="images/week12/SuccessBoard.jpg" alt="SuccessBoard" width="700" height="420" />
+                     <br><br>
+                     Images for Outercut and Traces
+                     <br><br>
+                     <img src="images/week12/w125Traces.jpg" alt="w125Traces" width="350" height="210" />
+                     <img src="images/week12/w125OuterCut.jpg" alt="w125OuterCut" width="350" height="210" />
+                     <br><br>
+                     Components I used
+                     <br><br>
+                     <ul>
+                        <li>ATtiny 44</li>
+                        <li>AVRISP</li>
+                        <li>10k Resistor</li>
+                        <li>22uF Capacitor</li>
+                        <li>10uF Capacitor</li>
+                        <li>4 Pin Header for Power</li>
+                        <li>6 Pin Header for 2 Servo motor</li>
+                        <li>20MHz Crystal</li>
+                        <li>LM 1117 5V Voltage Regulator</li>
+                     </ul>
+                     <br><br>
+                     Next step was to mill the board and Solder it. The circuit milled sussessfully at first time.
+                     <br><br>
+                     <img src="images/week12/44Circuit.jpg" alt="44Circuit" width="700" height="420" />
+                     <br><br>
+                     <img src="images/week12/44CircuitComponents.jpg" alt="44CircuitComponents" width="700" height="420" />
+                     <br><br>
+                     Now next step was to program the circuit. Unfortunately this time also the circuit didn't work, it programmed but the servo was not working. I also used external power of 12V but still did not work. The servo started but was not moving. It was success till burning bootloader and uploading the program but after that nothing worked. Then I decided to make 328p board.
+
+
+                  </p>
+
+                   <!-- week Content  -->
+                  <hr>
+
+                
+                            </section>
+            <!-- Fab Week Content  -->
+
+
+                  </div>
+               </div>
+
+            <!-- Sidebar -->
+               <div id="sidebar">
+                  <div class="inner">
+
+                     <!-- Search -->
+                  <center><img src="images/profile.jpg" width="50%" height="50%" alt="">
+               <br>
+               Rutuja Patel <br>
+            EC Engineer</center>
+
+                     <!-- Menu -->
+                        <nav id="menu">
+                           <header class="major">
+                              <h2>Menu</h2>
+                           </header>
+                           <ul>
+                              <li><a href="index.html">Homepage</a></li>
+                              <li>
+                                 <span class="opener">Submenu</span>
+                                 <ul>
+                                      <ul>
+                        <li><a href="1-principles-practices.html">Principles Practices</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="2-project-management.html">Project Management</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="3-computer-design.html">Computer-Aided Design</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="4-computer-cutting.html">Computer-Controlled Cutting</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="5-electronics-production.html">Electronics Production</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="6-scanning-printing.html">3D Scanning and Printing</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="7-electronics-design.html">Electronics Design</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="8-computer-machining.html">Computer-Controlled Machining</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="9-embedded-programming.html">Embedded Programming</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="10-molding-casting.html">Molding and Casting</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="11-input-devices.html">Input Devices</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="12-output-devices.html">Output Devices</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="13-interface-and-application-programming.html">Interface and Application Programming</a></li>
+                                 </ul>
+                              </li>
+                              
+                           </ul>
+                           <li><a href="Final-Project.html">Final Project</a></li>
+                        </nav>
+
+
+                         <section>
+                                 <header class="major">
+                                    <h2>Get in touch</h2>
+                                 </header>
+                                 <p>I am EC engineer doing my BE at state university at Gujarat, India.</p>
+                                 <ul class="contact">
+                                    <li class="fa-envelope-o"><a href="#">rutujapatel1201@gmail.com</a></li>
+                                    <li class="fa-phone">Sen me a Mail</li>
+                                    <li class="fa-home">Iscon, Ahmedabad,<br />
+                                       Gujarat, IN 380015
+                                    </li>
+                                 </ul>
+                           </section>
+
+                     <!-- Footer -->
+                           <footer id="footer">
+                                  <p class="copyright">&copy; Rutuja Patel. All rights reserved. <br>Design: Editorial Theme by <a href="https://html5up.net">HTML5 UP</a>.</p>
+                              </footer>
+
+                  </div>
+               </div>
+
+         </div>
+
+      <!-- Scripts -->
+         <script src="assets/js/jquery.min.js"></script>
+         <script src="assets/js/skel.min.js"></script>
+         <script src="assets/js/util.js"></script>
+         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+         <script src="assets/js/main.js"></script>
+
+   </body>
+</html>
