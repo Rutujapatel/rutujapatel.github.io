@@ -2,124 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Rutuja Patel</title>
+  <title>particles.js</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
-
-
-
-
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Responsive Portfolio Template">
-      <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-      <link rel="shortcut icon" href="favicon.ico">
-      <!-- Google Font -->
-      <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-      <!-- FontAwesome JS-->
-      <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
-      <!-- Plugins CSS -->
-      <link rel="stylesheet" href="assets/plugins/flickity/flickity.min.css">
-      <!-- Theme CSS -->  
-      <link id="theme-style" rel="stylesheet" href="css/style.css">
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 </head>
 <body>
 
-
-
-
-
- <header class="header">
-         <div class="top-bar theme-bg-primary-darken">
-            <div class="container-fluid">
-               <nav class="navbar navbar-expand-lg navbar-dark position-relative">
-                  <ul class="social-list list-inline mb-0">
-                     <li class="list-inline-item"><a class="text-white" href="https://twitter.com/RutujaPatel2"><i class="fab fa-twitter fa-fw"></i></a></li>
-                     <li class="list-inline-item"><a class="text-white" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
-                     <li class="list-inline-item"><a class="text-white" href="https://github.com/Rutujapatel"><i class="fab fa-github-alt fa-fw"></i></a></li>
-                     <!--
-                     <li class="list-inline-item"><a class="text-white" href=""><i class="fab fa-stack-overflow fa-fw"></i></a></li>
-                     <li class="list-inline-item"><a class="text-white" href=""><i class="fab fa-quora fa-fw"></i></a></li>
-                  -->
-                     <li class="list-inline-item"><a class="text-white" href="https://www.facebook.com/rutuja.me"><i class="fab fa-facebook fa-fw"></i></a></li>
-                     <li class="list-inline-item"><a class="text-white" href="https://www.youtube.com/channel/UCMDrbYWVza_TKpa0GDOmL_A"><i class="fab fa-youtube fa-fw"></i></a></li>
-                  </ul>
-                  <!--//social-list-->
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse text-uppercase" id="navigation">
-                     <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item active mr-lg-3">
-                           <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                        </li>
-                        <!--
-                        <li class="nav-item mr-lg-3">
-                           <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item mr-lg-3">
-                           <a class="nav-link" href="photography.html">Photography</a>
-                        </li>
-                        <li class="nav-item mr-lg-3">
-                           <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                    -->
-                        <li class="nav-item mr-lg-3">
-                           <a class="nav-link" href="resume.html">Resume</a>
-                        </li>
-                        <li class="nav-item mr-lg-3">
-                           <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <!--
-                        <li class="nav-item dropdown mr-0">
-                           <a class="nav-link dropdown-toggle" href="index.html#" id="navigationLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Achivments
-                           </a>
-                           <div class="dropdown-menu dropdown-menu-right text-capitalize shadow-lg" aria-labelledby="navigationLink">
-                              <a class="dropdown-item" href="project.html"></a>
-                              <a class="dropdown-item" href="#">Wining</a>
-                              <a class="dropdown-item" href="#">Workshops</a>
-                              <a class="dropdown-item" href="#">Google</a>
-                              <a class="dropdown-item" href="#">Mentor</a>
-                              <a class="dropdown-item" href="#">Courses</a>
-                              <a class="dropdown-item" href="fablab/index.html">FabLab</a>
-                           </div>
-                        </li>
-                    -->
-                     </ul>
-                     <span id="slide-line"></span>
-                  </div>
-               </nav>
-            </div>
-          </div>
-        </header>
-
-
-
-
-
-
-
-
-
-
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
 
 <!-- particles.js container -->
 <div id="particles-js"></div>
@@ -128,7 +22,8 @@
 <script src="../particles.js"></script>
 <script src="js/app.js"></script>
 
-
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
 <script>
   var count_particles, stats, update;
   stats = new Stats;
