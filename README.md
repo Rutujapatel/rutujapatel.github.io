@@ -1,1 +1,0 @@
-# rutujapatel.github.io
